@@ -1,0 +1,40 @@
+## Questions:
+What is the difference between var and let?
+Var is a variable and let is a constant
+
+What is an optional?
+A variable or parameter that can have a value or defaults to nil
+
+What is optional chaining vs optional binding?
+Optional chaining executing a closure (lambda function).
+Optional binding is accessing variables.
+
+What are the different ways to unwrap an optional? How do they work? Are they safe?
+Let name = something.something It is direct access and is not safe because the value can be null
+You can also use an underscore and question mark. It is safe because it will return a nil that can be checked for
+
+
+What is a closure?
+An anonymous lambda function that can be used now or assigned to a variable for later.
+
+What is the difference between a class and a struct?
+They are mostly the same except classes can allow casting and inheritance.
+
+What is the syntax '??' do?
+It gives a default value if a condition is false.
+
+What is a tuple?
+A group of variables that is comma separated inside parenthesis.
+They allow you to return multiple arguments from funcs.
+
+What is Any vs AnyObject?
+Any is a type and AnyObject is a class. AnyObject is a base class like Object in Java
+They can be used to make a generic function that can take any object as an input.
+
+
+What is a protocol?
+A protocol is like a contract in other languages. When a class inherits it, 
+it defines requirements of functions and variables along with access levels.
+
+What is Delegation
+The parent class makes decisions for the child class.

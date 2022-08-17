@@ -1,0 +1,30 @@
+Book: The Swift Programming Language
+https://docs.swift.org/swift-book/
+1. Read: Control Transfer Statement - Control Flow Section
+2. Read: API Availability - Control Flow Section
+3. Read: Recursive Enumerations -
+4. Read: Subscript -
+5. Read: Convenience initializer - Initialization Section
+6. Read: Deinitialization -
+7. Read: Optional Chaining -
+9. Read: Downcasting - Type Casting Section
+10. Read. Delegation - Protocols Section
+10. Read: Optional Protocol Requirements - Protocols Section
+11. Read: Automatic Reference Counting -
+
+## Questions:
+What is the difference between var and let?
+What is an optional?
+What is optional chaining vs optional binding?
+What are the different ways to unwrap an optional? How do they work? Are they safe?
+What is a closure?
+What is the difference between a class and a struct?
+What is the syntax '??' do?
+What is a tuple?
+What is Any vs AnyObject?
+What is a protocol?
+What is Delegation
+
+
+Read this article
+https://developer.apple.com/documentation/swift/choosing_between_structures_and_classes
