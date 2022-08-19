@@ -12,6 +12,7 @@
 //Make work with decimal
 //Make % work
 //make sign work
+//handle edge cases like 1.+
 
 
 import UIKit
@@ -70,6 +71,11 @@ class ViewController: UIViewController {
             }*/
     }
     
+    //clear the display after caclulation
+    //not working. crashes becase stack not full
+    //disabled in equals
+    var exisingCalc = false
+    
     func processKey()
     {
         //Append current operation to screen
@@ -84,6 +90,10 @@ class ViewController: UIViewController {
             Display.text = ""
             
         case "1", "2", "3", "4", "5", "6", "7", "8", "9", "0":
+            if exisingCalc == true{
+                operationQueue = Stack<String>()
+                Display.text = ""
+            }
             Display.text?.append( operationQueue.peek())
             //do nothing
             //print("num")
@@ -97,6 +107,7 @@ class ViewController: UIViewController {
             Display.text?.append( operationQueue.peek())
             
         case "=":
+            //exisingCalc = true
             //remove = from queue
             operationQueue.pop()
             let result = compute()
