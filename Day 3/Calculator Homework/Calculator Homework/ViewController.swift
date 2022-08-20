@@ -9,7 +9,6 @@
 //Getting the result of -1 will display error
 //fix the error state to be a number that is not possible
 //clear buffer if a num key pressed without another sign
-//Make work with decimal
 //Make % work
 //make sign work
 //handle edge cases like 1.+
