@@ -6,8 +6,6 @@
 //
 
 //TODO: and bugs:
-//Getting the result of -1 will display error
-//fix the error state to be a number that is not possible
 //clear buffer if a num key pressed without another sign
 //Make % work
 //make sign work
@@ -108,14 +106,14 @@ class ViewController: UIViewController {
         case "=":
             //exisingCalc = true
             //remove = from queue
-            operationQueue.pop()
+            _ = operationQueue.pop()
             let result = compute()
-            if result == -1
+            if result.success == false
             {
                 Display.text = String("Error")
             }
             else{
-                Display.text = String(result)
+                Display.text = String(result.result)
             }
             
         default:
@@ -123,7 +121,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func compute() -> Float
+    func compute() -> (result:Float, success:Bool)
     {
         var operand1 = ""
         var operand2 = ""
@@ -178,7 +176,7 @@ class ViewController: UIViewController {
         //validate operands
         if operand1 == "" || operand2 == ""
         {
-            return -1
+            return (-1, false)
         }
            
 
@@ -197,7 +195,7 @@ class ViewController: UIViewController {
         }
         
         operationQueue.push(String(result))
-        return result
+        return (result, true)
     }
     
 }
