@@ -17,7 +17,7 @@ class TableViewController: UITableViewController {
     var delegate: MyDataSendingDelegateProtocol? = nil
     
     //not correct way
-    var selected = ""
+    //var selected = ""
     
     override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
 //        if self.delegate != nil && self.dataToSendTextField.text != nil {
@@ -27,7 +27,7 @@ class TableViewController: UITableViewController {
 //                }
         //let cell = self.tableView.cellForRow(at: indexPath)
         print("before delegate")
-        selected = groceryList[indexPath.row]
+        //selected = groceryList[indexPath.row]
         if self.delegate != nil {
             print("delegate not null")
             let dataToBeSent = groceryList[indexPath.row]
