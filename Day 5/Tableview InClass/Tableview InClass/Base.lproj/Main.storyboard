@@ -53,7 +53,7 @@
                     <navigationItem key="navigationItem" id="dLu-0S-9xK"/>
                     <connections>
                         <outlet property="display" destination="lmo-zJ-XH7" id="7WD-S0-Zjj"/>
-                        <segue destination="6Bk-pA-XYP" kind="push" identifier="mySegue" id="gjb-A0-7pf"/>
+                        <segue destination="6Bk-pA-XYP" kind="show" identifier="mySegue" id="gjb-A0-7pf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

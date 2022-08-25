@@ -14,6 +14,7 @@ class ViewController: UIViewController, MyDataSendingDelegateProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        vc.delegate = self
         // Do any additional setup after loading the view.
     }
 
