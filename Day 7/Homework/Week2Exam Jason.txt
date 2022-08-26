@@ -1,0 +1,64 @@
+# Exam Week 2
+
+## Section 1
+
+What is Swift and how is it unique?
+Swift is designed by Apple for Apple products. It is an attempt to make
+an easy to use language that makes it easier to make apps.
+It is much cleaner than Objective C that came before it.
+
+What is an optional?
+An optional is denoted with a question mark at the end of an expression.
+It says a value is not required and nil is also valid.
+The expression has to either be force unwrapped or coalesced.
+
+What are the different ways we can unwrap an optional and explain each?
+The ! Force unwraps the statement, but will crash if the expression is nil.
+Coalescing uses ?? And provides an optional value to substitute if nil.
+
+What is optional chaining?
+Optional chaining is when multiple function calls all have optional parameters.
+You can try to get properties like text on a label that may not exist.
+
+What is MVC? Go into detail and give some of the pros and cons.
+Model view controller. The view is separated from the logic. This is good for large
+projects that might have different UIs like an android or desktop app.
+However, there might be a better method depending on needs, like if 
+an app is iOS only.
+
+Explain the Viewcontroller Lifecycle.
+The view controller has many functions which will be called over the course of
+displaying a view. loadView is the first one called where most of the data setup is done.
+There are others like viewDidLoad or viewWillLoad which are called before or after
+different parts of the setup. This gives developers plenty of places to hook into
+to tweak the display process. There are also teardown methods.
+
+In the Application LifeCycle, what does it mean when the application is Inactive?
+The app is currently loaded and probably visible, but something else is taking attention.
+
+What is a closure? What is the difference between an escaping and non-escaping closure?
+A closure is the equivalent of a lambda function. It is a short function that is assigned to a 
+variable, likely to be executed later. An escaping closure is when a closure gets executed after
+the parent function.
+
+What is the difference between reference types and value types?
+Reference types are passing a pointer to a function or a variable. This means that both instances
+will modify the original value. A value type passes the value on assignment and creates an new
+reference. They are both independently modified.
+
+In Swift, how do we pass a value by reference? 
+You use the let keyword it uses the same reference, since you can't modify the object.
+
+What are some higher order functions used in swift and what do they do? (Give 2)
+High order functions take in a closure with parameters such as sorted and map on an array.
+
+
+What is Autolayout?
+Autolayout defines constraints and relative positions and lets the device determine the details.
+This scales up to different sized and shaped screens.
+
+
+## Section 2 Coding
+
+See SecondLargestValue.playground
+

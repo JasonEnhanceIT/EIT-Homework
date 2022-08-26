@@ -5,7 +5,6 @@
 //  Created by Consultant on 8/25/22.
 //
 
-import Foundation
 import UIKit
 
 struct Images{
