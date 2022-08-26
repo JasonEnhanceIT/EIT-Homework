@@ -7,17 +7,12 @@
 
 import UIKit
 
-//protocol DetailDelegateProtocol {
-//    func setDetailObj(myData: String)
-//}
-
 class Top10TableView: UIViewController {
 
     var tableView = UITableView()
     var top: [Top10ListItem] = []
     let topCell = "topCell"
     var selected:Top10ListItem? = nil
-//    var delegate: DetailDelegateProtocol? = nil
     
     override func viewDidLoad() {
         view.backgroundColor = .green
@@ -70,20 +65,6 @@ extension Top10TableView: UITableViewDelegate, UITableViewDataSource
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if self.delegate != nil {
-//            print("not nil")
-////            let dataToBeSent = groceryList[indexPath.row]
-////            self.delegate?.sendDataToFirstViewController(myData: dataToBeSent)
-////            //doesn't work
-////            //dismiss(animated: true, completion: nil)
-////            self.navigationController?.popToRootViewController(animated: true)
-//        }
-        
-//        let vc = storyboard?.instantiateViewController(withIdentifier: "dvc") as! DetailViewController
-//        vc.detailObj = top[indexPath.row]
-//        present(vc, animated: true, completion: nil)
-        
-        //
         selected = top[indexPath.row]
         self.performSegue(withIdentifier: "detailSegue", sender: self)
     }
@@ -96,8 +77,12 @@ extension Top10TableView: UITableViewDelegate, UITableViewDataSource
 
 extension Top10TableView{
     func fetchData() -> [Top10ListItem] {
-        let top = [ Top10ListItem(image: Images.astonMartin, title:  "2019AstonMartinDBSSuperleggera", description: "desc")
-                     ]
-        return top
+        var list = Top10List
+        
+        list.sort {
+            $0.title < $1.title
+        }
+        
+        return list
     }
 }

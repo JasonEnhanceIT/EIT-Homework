@@ -9,30 +9,16 @@ import UIKit
 
 class DetailViewController: UIViewController {
     var detailObj: Top10ListItem? = nil
-    //let vc = Top10TableView()
     
-    @IBOutlet weak var Label: UILabel!
+    @IBOutlet weak var TitleText: UILabel!
+    @IBOutlet weak var Image: UIImageView!
+    @IBOutlet weak var Description: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //vc.delegate = self
-        Label.text = detailObj?.title
+        TitleText.text = detailObj?.details.title
+        Image.image = UIImage(named:(detailObj?.details.image)!)
+        Description.text = detailObj?.details.description
     }
-    
-//    func setDetailObj(myData: String) {
-//        print("delegate recieved")
-//        Label.text = detailObj?.title
-//    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

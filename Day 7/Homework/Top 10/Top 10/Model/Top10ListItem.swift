@@ -8,8 +8,8 @@
 import UIKit
 
 struct Top10ListItem {
-    var image: UIImage
     var title: String
-    var description: String
+    var image: String
+    var details: DetailItem
 }
 

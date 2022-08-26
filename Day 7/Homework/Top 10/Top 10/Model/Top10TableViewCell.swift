@@ -12,7 +12,6 @@ class Top10TableViewCell: UITableViewCell {
     var topImageView = UIImageView()
     var topTitle = UILabel()
     //TODO:redo layout
-    var topDesc = UILabel()
     
     override init(style:UITableViewCell.CellStyle, reuseIdentifier: String?){
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -30,9 +29,8 @@ class Top10TableViewCell: UITableViewCell {
     }
     
     func set(_ top: Top10ListItem){
-        topImageView.image = top.image
+        topImageView.image = UIImage(named:(top.image))
         topTitle.text = top.title
-        topDesc.text = top.description
     }
     
     func configurImageView(){

@@ -16,9 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to the app, Yada Yada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0RD-Fw-SC8">
-                                <rect key="frame" x="87" y="369" width="241" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Top 10 Trans" translatesAutoresizingMaskIntoConstraints="NO" id="crA-wR-T66">
+                                <rect key="frame" x="87" y="233" width="240" height="225"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This app displays the top 10 videogame soundtracks of the past decade." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0RD-Fw-SC8">
+                                <rect key="frame" x="87" y="518" width="241" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -26,6 +28,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0RD-Fw-SC8" firstAttribute="top" secondItem="crA-wR-T66" secondAttribute="bottom" constant="60" id="17U-Wf-P58"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="crA-wR-T66" secondAttribute="trailing" constant="87" id="OAc-i2-PlU"/>
+                            <constraint firstItem="crA-wR-T66" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="djL-bH-pOv"/>
+                            <constraint firstItem="crA-wR-T66" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="145" id="h88-wN-NL9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0RD-Fw-SC8" secondAttribute="trailing" constant="86" id="mJg-bO-RfV"/>
+                            <constraint firstItem="0RD-Fw-SC8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="zGh-zv-4yl"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Intro" image="homekit" catalog="system" id="K6j-Wk-xc4"/>
                     <navigationItem key="navigationItem" id="TJJ-yb-chE"/>
@@ -99,20 +109,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7k5-3Q-WS9">
-                                <rect key="frame" x="55" y="339" width="240" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMX-Mo-Qrg">
+                                <rect key="frame" x="20" y="128" width="374" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7zT-z8-sBW">
+                                <rect key="frame" x="20" y="175.5" width="374" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="qFy-fa-0hl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7k5-3Q-WS9">
+                                <rect key="frame" x="20" y="425.5" width="374" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rx0-kh-HMd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rx0-kh-HMd" firstAttribute="trailing" secondItem="7k5-3Q-WS9" secondAttribute="trailing" constant="20" id="07v-Ia-pya"/>
+                            <constraint firstItem="pMX-Mo-Qrg" firstAttribute="leading" secondItem="rx0-kh-HMd" secondAttribute="leading" constant="20" id="FZX-ww-hrQ"/>
+                            <constraint firstItem="7k5-3Q-WS9" firstAttribute="top" secondItem="7zT-z8-sBW" secondAttribute="bottom" id="LkD-jC-8vi"/>
+                            <constraint firstItem="pMX-Mo-Qrg" firstAttribute="top" secondItem="rx0-kh-HMd" secondAttribute="top" constant="40" id="O0v-PX-cVT"/>
+                            <constraint firstItem="7zT-z8-sBW" firstAttribute="top" secondItem="pMX-Mo-Qrg" secondAttribute="bottom" constant="20" id="Xqz-fY-vg5"/>
+                            <constraint firstItem="7zT-z8-sBW" firstAttribute="leading" secondItem="rx0-kh-HMd" secondAttribute="leading" constant="20" id="d8M-Pz-bqg"/>
+                            <constraint firstItem="rx0-kh-HMd" firstAttribute="trailing" secondItem="pMX-Mo-Qrg" secondAttribute="trailing" constant="20" id="jvy-EE-pT1"/>
+                            <constraint firstItem="7k5-3Q-WS9" firstAttribute="leading" secondItem="rx0-kh-HMd" secondAttribute="leading" constant="20" id="m81-Za-TUI"/>
+                            <constraint firstItem="rx0-kh-HMd" firstAttribute="trailing" secondItem="7zT-z8-sBW" secondAttribute="trailing" constant="20" id="mfV-MR-bck"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kMw-K8-oGJ"/>
                     <connections>
-                        <outlet property="Label" destination="7k5-3Q-WS9" id="yGF-Iu-YXK"/>
+                        <outlet property="Description" destination="7k5-3Q-WS9" id="KqF-52-Nv6"/>
+                        <outlet property="Image" destination="7zT-z8-sBW" id="JRK-MQ-Yy1"/>
+                        <outlet property="TitleText" destination="pMX-Mo-Qrg" id="27a-ze-gQn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HIl-FM-fqk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -121,6 +155,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Top 10 Trans" width="225" height="225"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="music.note.list" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">

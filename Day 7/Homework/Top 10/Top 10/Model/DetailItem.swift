@@ -8,7 +8,7 @@
 import UIKit
 
 struct DetailItem {
-    var image: UIImage
     var title: String
+    var image: String
     var description: String
 }
